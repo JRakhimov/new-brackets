@@ -4,7 +4,11 @@
   "description": "Brackets",
   "main": "test.js",
   "scripts": {
+    "dev": "nodemon -x npm test src/index.js",
     "test": "mocha test.js"
+  },
+  "engines": {
+    "node": ">=11.15.0"
   },
   "repository": {
     "type": "git",
