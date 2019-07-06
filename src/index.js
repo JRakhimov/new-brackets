@@ -1,5 +1,5 @@
 module.exports = function check(str, bracketsConfig) {
-  const flattedBrackets = bracketsConfig.flat();
+  const flattedBrackets = bracketsConfig.reduce((acc, val) => acc.concat(val), []); // .flat() alternative
   const splittedString = str.split('');
   const similarBrackets = {};
   const brackets = [];
